@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:weightSum="10">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:layout_marginBottom="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/linearlayout_background"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/GlukozeConcentratioInBlood"
+                android:gravity="center_horizontal"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/BeforeSleep"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/etEveningGlucoze"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:hint="@string/bloodGlukozeLevelUnit"
+                android:textColor="@color/black"
+                android:background="@drawable/edittext_background"
+                android:padding="20dp"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/MidSleep"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/etNightGlucoze"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:hint="@string/bloodGlukozeLevelUnit"
+                android:textColor="@color/black"
+                android:background="@drawable/edittext_background"
+                android:padding="20dp"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/AfterWakingUp"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/etMorningGlucoze"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:hint="@string/bloodGlukozeLevelUnit"
+                android:textColor="@color/black"
+                android:background="@drawable/edittext_background"
+                android:padding="20dp"
+                android:layout_marginBottom="15dp"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/linearlayout_background"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/SleepQuality"
+                android:gravity="center_horizontal"
+                android:textSize="22sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/SleepingTime"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/etSleepingTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:background="@drawable/edittext_background"
+                android:padding="20dp"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Broj buđenja tokom noći:"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/etNumberOfWakingUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:background="@drawable/edittext_background"
+                android:padding="20dp"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/FeelingAfterWakingUp"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="5dp"/>
+
+            <RadioGroup
+                android:id="@+id/rgMorningFeeling"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="15dp">
+
+                <RadioButton
+                    android:id="@+id/rbTired"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/IFeelTired"/>
+
+                <RadioButton
+                    android:id="@+id/rbRested"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/IFeelRested"/>
+
+                <RadioButton
+                    android:id="@+id/rbHardToSay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/HardToSay"/>
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+    <android.widget.Button
+    android:id="@+id/bAdd"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="@drawable/button_background"
+    android:text="Provjeri"
+    android:textColor="@color/white"
+    android:textStyle="bold"
+    android:layout_marginBottom="10dp"
+    android:layout_weight="1"/>
+
+</LinearLayout>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".StatsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@drawable/linearlayout_background"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/yourConn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/YourConnections"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/yHighConn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/HighConn"
+            android:layout_below="@+id/yourConn"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/yHighConnPerc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yourConn"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_toRightOf="@id/yHighConn"
+            android:layout_marginLeft="30dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/yMediumConn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MediumConn"
+            android:layout_below="@+id/yHighConn"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/yMediumConnPerc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yHighConn"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_toRightOf="@id/yMediumConn"
+            android:layout_marginLeft="30dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/yLowConn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LowConn"
+            android:layout_below="@+id/yMediumConn"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/yLowConnPerc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yMediumConn"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_toRightOf="@id/yLowConn"
+            android:layout_marginLeft="30dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/yNotConn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NotConn"
+            android:layout_below="@+id/yLowConn"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/yNotConnPerc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/yLowConn"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_toRightOf="@id/yNotConn"
+            android:layout_marginLeft="30dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_below="@id/yNotConn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_bottomborder"
+            android:layout_marginBottom="10dp"/>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@drawable/linearlayout_background">
+
+        <TextView
+            android:id="@+id/userConn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/AllUsersConnections"
+            android:textSize="22sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:id="@+id/HighConn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/HighConn"
+            android:layout_below="@+id/userConn"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/HighConnPerc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userConn"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_toRightOf="@id/HighConn"
+            android:layout_marginLeft="30dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/MediumConn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/MediumConn"
+            android:layout_below="@+id/HighConn"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/MediumConnPerc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/HighConn"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_toRightOf="@id/MediumConn"
+            android:layout_marginLeft="30dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/LowConn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/LowConn"
+            android:layout_below="@+id/MediumConn"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/LowConnPerc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MediumConn"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_toRightOf="@id/LowConn"
+            android:layout_marginLeft="30dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:id="@+id/NotConn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/NotConn"
+            android:layout_below="@+id/LowConn"
+            android:textColor="@color/black"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/NotConnPerc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LowConn"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:layout_toRightOf="@id/NotConn"
+            android:layout_marginLeft="30dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_below="@id/NotConn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_bottomborder"
+            android:layout_marginBottom="10dp"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

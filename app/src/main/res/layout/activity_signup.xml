@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dis_icon"
+            android:padding="30dp"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/linearlayout_background">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/Username"
+                android:textColor="@color/black"
+                android:background="@drawable/edittext_background"
+                android:padding="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:hint="@string/Email"
+                android:background="@drawable/edittext_background"
+                android:padding="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/etPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:hint="@string/Password"
+                android:background="@drawable/edittext_background"
+                android:padding="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/etConfPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:hint="@string/RepeatPassword"
+                android:background="@drawable/edittext_background"
+                android:padding="20dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <android.widget.Button
+                android:id="@+id/bSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="@string/SignIn"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:onClick="signup"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/AlreadyHaveAnAccount"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:onClick="login"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

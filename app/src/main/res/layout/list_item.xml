@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:layout_margin="15dp"
+    android:background="@drawable/linearlayout_background">
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_alignParentLeft="true"
+        android:text="Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tvConnection"
+        android:layout_below="@+id/tvDate"
+        android:layout_alignParentLeft="true"
+        android:text="Connection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:id="@+id/tvEvening"
+        android:layout_below="@+id/tvConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/GlukozeConcentrationInTheEvening"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tvEveningGlukoze"
+        android:layout_toRightOf="@+id/tvEvening"
+        android:layout_below="@+id/tvConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="___ xx/yy"
+        android:textSize="15sp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tvNight"
+        android:layout_below="@+id/tvEvening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/GlukozeConcentrationInTheNight"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tvNightGlukoze"
+        android:layout_toRightOf="@+id/tvNight"
+        android:layout_below="@+id/tvEvening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="___ xx/yy"
+        android:textSize="15sp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tvMorning"
+        android:layout_below="@+id/tvNight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/GlukozeConcentrationInTheMorning"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/tvMorningGlukoze"
+        android:layout_toRightOf="@+id/tvMorning"
+        android:layout_below="@+id/tvNight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="___ xx/yy"
+        android:textSize="15sp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tvSleeping"
+        android:layout_below="@+id/tvMorning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/YouSlept"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tvSleepingTime"
+        android:layout_toRightOf="@+id/tvSleeping"
+        android:layout_below="@+id/tvMorning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="___ xx/yy"
+        android:textSize="15sp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tvWakingUp"
+        android:layout_below="@+id/tvSleeping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/YouWokenUp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tvNumberOfWakingUp"
+        android:layout_toRightOf="@+id/tvWakingUp"
+        android:layout_below="@+id/tvSleeping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="___ xx/yy"
+        android:textSize="15sp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tvMorningFeel"
+        android:layout_below="@+id/tvWakingUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/YourFeelingInTheMorning"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tvMorningFeeling"
+        android:layout_toRightOf="@+id/tvMorningFeel"
+        android:layout_below="@+id/tvWakingUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="___ xx/yy"
+        android:textSize="15sp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:layout_below="@id/tvMorningFeel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_bottomborder"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

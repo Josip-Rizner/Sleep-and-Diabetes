@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "Praćenje i procjena poremećaja spavanja osoba oboljelih od dijabetesa"

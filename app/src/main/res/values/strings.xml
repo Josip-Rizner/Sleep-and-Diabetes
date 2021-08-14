@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Sleep and Diabetes</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">cMdWtnPqAkF4LxQqcv8iDFvg3NVFbhR2q20xerTM</string>
+    <string name="back4app_client_key">erl02wkoqcCSD00whBIdQwTZkVZ9flix7sPdHS3t</string>
+    <string name="bloodGlukozeLevelUnit">mmol/L</string>
+    <string name="ResetPasswordDescription">Upišite svoj email kako bi resetirali lozinku. \nDobit ćete email s uputama kako resetirati lozinku.</string>
+    <string name="SendEmail">Pošalji email</string>
+    <string name="BackToLogIn">Nazad na prijavu</string>
+    <string name="Email">Email</string>
+    <string name="Username">Korisničko ime</string>
+    <string name="Password">Lozinka</string>
+    <string name="RepeatPassword">Ponovite lozinku</string>
+    <string name="SignIn">Registriraj se</string>
+    <string name="AlreadyHaveAnAccount">Već imate korisnički račun?</string>
+    <string name="LogIn">Prijava</string>
+    <string name="DontHaveAnAccount">Nemate korisnički račun?</string>
+    <string name="ForgotPassword">Zaboravili ste lozinku?</string>
+    <string name="YourEmail">Vaš email:</string>
+    <string name="AboutDiseaseConnection">Kod ljudi sa dijabetesom često su prisutni i problemi sa spavanjem. uključujući teškoće da zaspu ili ostanu u snu. Neki ljudi sa dijabetesom previše spavaju, dok drugi imaju probleme da imaju dovoljno sna. Prema Američkoj nacionalnoj fondaciji za spavanje, 63% odraslih nema dovoljno sna koje je potrebno za dobro zdravlje, sigurnost i optimalne performanse.</string>
+    <string name="AboutFreeStyleLibre">FreeStyle Libre flash sustav za praćenje glukoze pacijente oslobađa svakodnevnih, redovitih uboda potrebnih za mjerenje glukoze u krvi. Uz FreeStyle Libre jednostavno provjerite svoju glukozu bilo kada i bilo gdje! Samo skenirajte FreeStyle Libre senzor kako biste dobili trenutačno očitanje, smjer u kojem se glukoza kreće te pregled kretanja glukoze u posljednjih 8 sati.</string>
+    <string name="DeseaseConnectionTittle">Povezanost dijabetesa i problema sa spavanjem</string>
+    <string name="FreeStyleLibreTittle">FreeStyle Libre</string>
+    <string name="GlukozeConcentratioInBlood">Koncentracija glukoze u krvi:</string>
+    <string name="BeforeSleep">Prije spavanja:</string>
+    <string name="AfterWakingUp">Nakon buđenja:</string>
+    <string name="MidSleep">Dok ste spavali (u pola sna):</string>
+    <string name="SleepQuality">Kvaliteta sna</string>
+    <string name="SleepingTime">Koliko sati ste spavali?</string>
+    <string name="FeelingAfterWakingUp">Kako se osjećate kada se probudite?</string>
+    <string name="IFeelTired">Osjećam se umorno</string>
+    <string name="IFeelRested">Osjećam se odmorno</string>
+    <string name="HardToSay">Teško je reći</string>
+    <string name="YourFeelingInTheMorning">Ujutro ste se osjećali:</string>
+    <string name="YouWokenUp">Probudili ste se:</string>
+    <string name="YouSlept">Spavali ste:</string>
+    <string name="GlukozeConcentrationInTheMorning">Glukoza u krvi ujutro:</string>
+    <string name="GlukozeConcentrationInTheNight">Glukoza u krvi tijekom noći:</string>
+    <string name="GlukozeConcentrationInTheEvening">Glukoza u krvi navečer:</string>
+    <string name="Home">Home</string>
+    <string name="NewRecord">Novi zapis</string>
+    <string name="History">Povijest</string>
+    <string name="LogOut">Odjava</string>
+    <string name="graph">Krivulja</string>
+    <string name="Stats">Statistika</string>
+    <string name="MediumConn">Srednja povezanost -</string>
+    <string name="HighConn">Visoka povezanost -</string>
+    <string name="LowConn">Niska povezanost -</string>
+    <string name="NotConn">Nije povezano -</string>
+    <string name="AllUsersConnections">Procjene povezanosti dijabetesa i poremećaja spavanja kod svih korisnika:</string>
+    <string name="YourConnections">Vaše procjene povezanosti dijabetesa i poremećaja spavanja:</string>
+</resources>
