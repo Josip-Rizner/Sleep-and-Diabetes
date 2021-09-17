@@ -29,6 +29,7 @@ public class SignupActivity extends AppCompatActivity {
         etConfPass = findViewById(R.id.etConfPass);
     }
 
+
     public void signup(View view) {
         if(TextUtils.isEmpty(etName.getText())){
             etName.setError("Korisničko ime je obavezno!");

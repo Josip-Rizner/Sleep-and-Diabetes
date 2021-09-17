@@ -35,6 +35,22 @@
                 android:textSize="17sp"/>
 
             <TextView
+                android:id="@+id/tvReadMoreDiabetes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ReadMoreAboutDiabetes"
+                android:textSize="17sp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/tvReadMoreSleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ReadMoreAboutProblemsWithSleep"
+                android:textSize="17sp"
+                android:textColor="@color/black"/>
+
+            <TextView
                 android:layout_below="@id/tvMorningFeel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

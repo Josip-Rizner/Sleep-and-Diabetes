@@ -26,7 +26,7 @@ public class ResetPasswordActivity extends AppCompatActivity {
     }
 
 
-    public void sendEmail(View view){
+    public void resetPassword(View view){
 
         if(TextUtils.isEmpty(etSendEmail.getText())){
             etSendEmail.setError("Email je obavezan!");

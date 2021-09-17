@@ -93,9 +93,7 @@ public class AddFragment extends Fragment {
         }
 
     }
-
-
-
+    
     private void addRecord(){
 
         DateFormat dateFormat = new SimpleDateFormat("dd. MM. yyyy. HH:mm:ss");
@@ -116,7 +114,6 @@ public class AddFragment extends Fragment {
         record.put("sleepRating", rateSleep());
         record.put("glukozeConcentrationRating", rateGlucozeConcentration());
 
-
         if(rbTired.isChecked()){
             record.put("morningFeeling", "Umorno");
         }
@@ -126,7 +123,6 @@ public class AddFragment extends Fragment {
         else{
             record.put("morningFeeling", "Teško je reći");
         }
-
 
         record.saveInBackground(e -> {
             if (e == null){
@@ -138,8 +134,6 @@ public class AddFragment extends Fragment {
             }
         });
     }
-
-
 
     private String checkDiseaseConnection(){
 
@@ -168,7 +162,6 @@ public class AddFragment extends Fragment {
             else{
                 diseaseConnection = "Nije povezano";
             }
-
         }
 
         else if(glucozeConcentrationRating == 3 || glucozeConcentrationRating == 4){
@@ -213,7 +206,6 @@ public class AddFragment extends Fragment {
         sleepRating = sleepTime * 11.5;
 
         if(sleepRating > 100){sleepRating =100;}
-
 
         if(achieved_REM_cycles < 1){
             sleepRating *= 0.20;
@@ -274,7 +266,6 @@ public class AddFragment extends Fragment {
         double nightGlucoze = Double.parseDouble(etNightGlucoze.getText().toString());
         double glucozeConcentrationRating = 0;
 
-        /*Glukoze concentration in blood goal value is between 3.9mmol/L and 10mmol/L */
 
         if(eveningGlucoze < 3.9){
             glucozeConcentrationRating += 1;

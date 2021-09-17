@@ -2,6 +2,7 @@ package com.gmail.praenjeiprocjenaporemeajaspavanjaosobaoboljelihoddijabetesa;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -21,7 +22,7 @@ import com.parse.ParseUser;
 
 public class HomeFragment extends Fragment {
 
-    //TextView tvEmail;
+    TextView tvReadMoreDiabetes, tvReadMoreSleep;
 
 
     @Nullable
@@ -29,18 +30,29 @@ public class HomeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_home, container, false);
 
-        //ParseUser currentUser = ParseUser.getCurrentUser();
+        tvReadMoreDiabetes = v.findViewById(R.id.tvReadMoreDiabetes);
+        tvReadMoreSleep = v.findViewById(R.id.tvReadMoreSleep);
 
-        //tvEmail = v.findViewById(R.id.tvEmail);
+        tvReadMoreDiabetes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://hr.wikipedia.org/wiki/%C5%A0e%C4%87erna_bolest");
+            }
+        });
 
-
-        /*if(currentUser != null)
-        {
-            tvEmail.setText(currentUser.getEmail());
-
-        }*/
+        tvReadMoreSleep.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.plivazdravlje.hr/aktualno/clanak/2284/Poremecaji-spavanja.html");
+            }
+        });
 
         return v;
+    }
+
+    private void gotoUrl(String string) {
+        Uri uri = Uri.parse(string);
+        startActivity(new Intent(Intent.ACTION_VIEW, uri));
     }
 
 

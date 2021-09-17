@@ -52,7 +52,6 @@ public class HistoryFragment extends Fragment {
         if ((ParseUser.getCurrentUser()) != null) {
 
             ParseUser currentUser = ParseUser.getCurrentUser();
-
             ParseQuery<ParseObject> query = ParseQuery.getQuery("Record");
             query.whereEqualTo("userID", currentUser.getObjectId());
             query.orderByDescending("createdAt");
@@ -76,11 +75,8 @@ public class HistoryFragment extends Fragment {
                         retreivedRecords.add(record.get("morningFeeling").toString());
                     }
 
-
-
                     adapter = new HistoryAdapter(retreivedRecords, objects.size());
                     recyclerView.setAdapter(adapter);
-
 
                 }
 

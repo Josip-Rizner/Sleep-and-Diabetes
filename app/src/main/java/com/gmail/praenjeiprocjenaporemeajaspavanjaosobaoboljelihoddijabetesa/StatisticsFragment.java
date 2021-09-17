@@ -20,7 +20,7 @@ import com.parse.ParseUser;
 import java.util.concurrent.TimeUnit;
 
 
-public class StatsFragment extends Fragment {
+public class StatisticsFragment extends Fragment {
 
     TextView yHighConnPerc, yMediumConnPerc, yLowConnPerc, yNotConnPerc, HighConnPerc, MediumConnPerc, LowConnPerc, NotConnPerc;
     int objectsSize;

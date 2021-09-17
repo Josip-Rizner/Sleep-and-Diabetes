@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="20dp"
-    tools:context=".StatsFragment">
+    tools:context=".StatisticsFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"

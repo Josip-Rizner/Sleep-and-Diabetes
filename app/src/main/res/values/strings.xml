@@ -52,4 +52,6 @@
     <string name="NotConn">Nije povezano -</string>
     <string name="AllUsersConnections">Procjene povezanosti dijabetesa i poremećaja spavanja kod svih korisnika:</string>
     <string name="YourConnections">Vaše procjene povezanosti dijabetesa i poremećaja spavanja:</string>
+    <string name="ReadMoreAboutDiabetes">Pročitajte više o dijabetesu (kliknite ovdje)</string>
+    <string name="ReadMoreAboutProblemsWithSleep">Pročitajte više o problemima sa spavanjem (kliknite ovdje)</string>
 </resources>

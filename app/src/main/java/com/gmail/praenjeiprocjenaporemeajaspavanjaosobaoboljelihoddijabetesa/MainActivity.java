@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                             selectedFragment = new HistoryFragment();
                             break;
                         case R.id.nav_stats:
-                            selectedFragment = new StatsFragment();
+                            selectedFragment = new StatisticsFragment();
                             break;
                     }
 
