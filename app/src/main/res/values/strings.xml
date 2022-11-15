@@ -4,8 +4,8 @@
     <string name="back4app_server_url">https://parseapi.back4app.com/</string>
 
     <!-- Change the following strings as required -->
-    <string name="back4app_app_id">cMdWtnPqAkF4LxQqcv8iDFvg3NVFbhR2q20xerTM</string>
-    <string name="back4app_client_key">erl02wkoqcCSD00whBIdQwTZkVZ9flix7sPdHS3t</string>
+    <string name="back4app_app_id"></string>
+    <string name="back4app_client_key"></string>
     <string name="bloodGlukozeLevelUnit">mmol/L</string>
     <string name="ResetPasswordDescription">Upišite svoj email kako bi resetirali lozinku. \nDobit ćete email s uputama kako resetirati lozinku.</string>
     <string name="SendEmail">Pošalji email</string>
